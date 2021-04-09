@@ -1,4 +1,4 @@
-BinaryCounter.cpp.o: ../BinaryCounter.cpp \
+bin_counter/BinaryCounter.cpp.o: ../bin_counter/BinaryCounter.cpp \
  /Users/parviz.oshurmamadov/eclipse/cpp-2021-03/Eclipse.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.8.3/cores/arduino/Arduino.h \
  /Users/parviz.oshurmamadov/eclipse/cpp-2021-03/Eclipse.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.8.3/cores/arduino/binary.h \
  /Users/parviz.oshurmamadov/eclipse/cpp-2021-03/Eclipse.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.8.3/cores/arduino/WCharacter.h \
@@ -10,7 +10,7 @@ BinaryCounter.cpp.o: ../BinaryCounter.cpp \
  /Users/parviz.oshurmamadov/eclipse/cpp-2021-03/Eclipse.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.8.3/cores/arduino/USBAPI.h \
  /Users/parviz.oshurmamadov/eclipse/cpp-2021-03/Eclipse.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.8.3/cores/arduino/Arduino.h \
  /Users/parviz.oshurmamadov/eclipse/cpp-2021-03/Eclipse.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.8.3/variants/standard/pins_arduino.h \
- ../BinaryCounter.h
+ ../bin_counter/BinaryCounter.h
 
 /Users/parviz.oshurmamadov/eclipse/cpp-2021-03/Eclipse.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.8.3/cores/arduino/Arduino.h:
 
@@ -34,4 +34,4 @@ BinaryCounter.cpp.o: ../BinaryCounter.cpp \
 
 /Users/parviz.oshurmamadov/eclipse/cpp-2021-03/Eclipse.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.8.3/variants/standard/pins_arduino.h:
 
-../BinaryCounter.h:
+../bin_counter/BinaryCounter.h:

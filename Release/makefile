@@ -13,6 +13,7 @@ RM := rm
 -include rgb_simple/subdir.mk
 -include potentiometer/subdir.mk
 -include core/core/subdir.mk
+-include bin_counter/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
