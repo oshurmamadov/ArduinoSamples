@@ -2,15 +2,17 @@
 #include "voltage_reader/VoltageReader.h"
 #include "potentiometer/Potentiometer.h"
 #include "rgb_simple/RgbSimple.h"
+#include "photoresistor/Photoresistor.h"
 
 VoltageReader voltageReader;
 Potentiometer potentiometer;
 RgbSimple rgbSimple;
+Photoresistor photoresistor;
 
 void setup() {
-	rgbSimple.setup();
+	photoresistor.setup();
 }
 
 void loop() {
-	rgbSimple.loop();
+	photoresistor.loop();
 }
