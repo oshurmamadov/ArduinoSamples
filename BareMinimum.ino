@@ -3,16 +3,18 @@
 #include "potentiometer/Potentiometer.h"
 #include "rgb_simple/RgbSimple.h"
 #include "photoresistor/Photoresistor.h"
+#include "push_buttons/PushButton.h"
 
 VoltageReader voltageReader;
 Potentiometer potentiometer;
 RgbSimple rgbSimple;
 Photoresistor photoresistor;
+PushButton pushButton;
 
 void setup() {
-	photoresistor.setup();
+	pushButton.setup();
 }
 
 void loop() {
-	photoresistor.loop();
+	pushButton.loop();
 }
