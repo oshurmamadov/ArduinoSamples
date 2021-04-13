@@ -23,9 +23,9 @@ void PushButton:: loop() {
 	int newState = digitalRead(readPin);
 
 	Serial.println(newState);
-	delay(300);
+	delay(100);
 
-	if (newState == 1) {
+	if (newState == 1 && oldState == 0) {
 		if (isLedTurnedOn == false) {
 			digitalWrite(ledPin, HIGH);
 			isLedTurnedOn = true;
@@ -34,4 +34,5 @@ void PushButton:: loop() {
 			isLedTurnedOn = false;
 		}
 	}
+	oldState = newState;
 }
