@@ -40,7 +40,7 @@ void ServoSimple::loop() {
 		servo.write(positionDown);
 		currentPosition = positionDown;
 		Serial.println(currentPosition);
-	} else if (voltage > 1 && voltage < 4 && currentPosition != positionMiddle){
+	} else if (voltage > 1 && voltage < 4 && currentPosition != positionMiddle) {
 		// cloudy
 		servo.write(positionMiddle);
 		currentPosition = positionMiddle;
