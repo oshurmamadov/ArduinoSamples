@@ -6,6 +6,7 @@
 #include "push_buttons/PushButton.h"
 #include "servo/ServoSimple.h"
 #include "joystick_simple/JoystickSimple.h"
+#include "stepper_motor/StepperMotor.h"
 
 VoltageReader voltageReader;
 Potentiometer potentiometer;
@@ -14,11 +15,12 @@ Photoresistor photoresistor;
 PushButton pushButton;
 ServoSimple servoSimple;
 JoystickSimple joystickSimple;
+StepperMotor stepperMotor;
 
 void setup() {
-	joystickSimple.setup();
+	stepperMotor.setup();
 }
 
 void loop() {
-	joystickSimple.loop();
+	stepperMotor.loop();
 }
