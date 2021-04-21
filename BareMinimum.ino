@@ -8,6 +8,7 @@
 #include "joystick_simple/JoystickSimple.h"
 #include "stepper_motor/StepperMotor.h"
 #include "dc_motor/DCMotor.h"
+#include "parallel_shift_register/PSR.h"
 
 VoltageReader voltageReader;
 Potentiometer potentiometer;
@@ -18,11 +19,12 @@ ServoSimple servoSimple;
 JoystickSimple joystickSimple;
 StepperMotor stepperMotor;
 DCMotor dcMotor;
+PSR psr;
 
 void setup() {
-	dcMotor.setup();
+	psr.setup();
 }
 
 void loop() {
-	dcMotor.loop();
+	psr.loop();
 }
