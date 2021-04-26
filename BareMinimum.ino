@@ -9,6 +9,8 @@
 #include "stepper_motor/StepperMotor.h"
 #include "dc_motor/DCMotor.h"
 #include "parallel_shift_register/PSR.h"
+#include "lcd_display/LcdDisplay.h"
+#include "dht_sensor/DhtSensor.h"
 
 VoltageReader voltageReader;
 Potentiometer potentiometer;
@@ -20,11 +22,13 @@ JoystickSimple joystickSimple;
 StepperMotor stepperMotor;
 DCMotor dcMotor;
 PSR psr;
+LcdDisplay lcdDisplay;
+DhtSensor dhtSensor;
 
 void setup() {
-	psr.setup();
+	dhtSensor.setup();
 }
 
 void loop() {
-	psr.loop();
+	dhtSensor.loop();
 }
