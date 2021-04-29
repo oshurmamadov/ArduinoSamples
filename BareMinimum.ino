@@ -11,6 +11,7 @@
 #include "parallel_shift_register/PSR.h"
 #include "lcd_display/LcdDisplay.h"
 #include "dht_sensor/DhtSensor.h"
+#include "hc_sensor/HcSensor.h"
 
 VoltageReader voltageReader;
 Potentiometer potentiometer;
@@ -24,11 +25,12 @@ DCMotor dcMotor;
 PSR psr;
 LcdDisplay lcdDisplay;
 DhtSensor dhtSensor;
+HcSensor hcSensor;
 
 void setup() {
-	dhtSensor.setup();
+	hcSensor.setup();
 }
 
 void loop() {
-	dhtSensor.loop();
+	hcSensor.loop();
 }
