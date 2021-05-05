@@ -30,7 +30,7 @@ void HcSensor::loop() {
 	int pingTime = pulseIn(echoPin, HIGH);
 	delay(2000);
 
-	float distance = soundSpeed * (pingTime/2.0/10000.);
+	float distance = soundSpeed * (pingTime/2.0/10000.); // need to divide by 2 since it is go and back time
 
-	Serial.println(mMessage + distance);
+	Serial.println(distance);
 }

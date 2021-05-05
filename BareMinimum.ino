@@ -12,6 +12,7 @@
 #include "lcd_display/LcdDisplay.h"
 #include "dht_sensor/DhtSensor.h"
 #include "hc_sensor/HcSensor.h"
+#include "ir_remote/MyIRRemote.h"
 
 VoltageReader voltageReader;
 Potentiometer potentiometer;
@@ -26,11 +27,12 @@ PSR psr;
 LcdDisplay lcdDisplay;
 DhtSensor dhtSensor;
 HcSensor hcSensor;
+MyIRRemote myIRRemote;
 
 void setup() {
-	hcSensor.setup();
+	myIRRemote.setup();
 }
 
 void loop() {
-	hcSensor.loop();
+	myIRRemote.loop();
 }
